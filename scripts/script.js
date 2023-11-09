@@ -24,20 +24,26 @@ setInterval(function () {
 // END UNIVERSAL METHODS
 
 // FORM.HTML METHODS
-function updateDuration() {
-    const duration = document.getElementById('duration-input').value;
-    const durationDisplay = document.getElementById('duration-display').innerHTML = duration + ' minutes';
+let duration = 5;
+function updateDuration(action) {
+    let increment = 5;
+    if (action == "increase" && duration < 45) {
+        duration += increment;
+    } else if (action == "decrease" && duration > 5) {
+        duration -= increment;
+    }
+    document.getElementById('duration-value').innerHTML = duration;
 }
 
 function requestPass() {
     const studentName = document.getElementById('student-name-input').value;
     const studentDestination = document.getElementById('destination-input').value;
-    const studentDuration = document.getElementById('duration-input').value;
+    const studentDuration = document.getElementById('duration-value').innerHTML;
 
 
     // Check for invalid inputs
     if (studentName == '' | studentDestination == '' | studentDuration == '') {
-        alert('Please complete all three forms before requesting a pass.');
+        alert('Please complete both fields before requesting a pass.');
         return;
     }
 

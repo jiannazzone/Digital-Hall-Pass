@@ -24,8 +24,12 @@
             <div><input class="card" id="student-name-input" placeholder="Student Name"></div>
             <div><input class="card" id="destination-input" placeholder="Destination"></div>
             <div class="card">
-                <input name="duration" id="duration-input" type="range" value="5" min="5" max="45" step="5" onchange="updateDuration()">
-                <div id="duration-display">5 minutes</div>
+                <div id="duration-display">
+                    <span id="duration-value">5</span>
+                    <span>minutes</span>
+                </div>
+                <button class="duration-button card" id="duration-down" onclick="updateDuration('decrease')">- 5</button>
+                <button class="duration-button card" id="duration-up" onclick="updateDuration('increase')">+ 5</button>
             </div>
             
         </div>
