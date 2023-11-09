@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body onload="getURLData()">
+    <body>
 
         <div class="header">
             <h1>HIGHLAND HALL PASS</h1>
@@ -19,18 +19,17 @@
         <img id="husky" src="husky.png">
 
         <div id="details">
-            <div class="card" id="student-name">Student Name</div>
 
-            <div class="card" id="issue-date-time">
-                VALID FOR
-                <div id="date">January 01, 2000</div>
-                <div id="time">
-                    <span id="start">12:00 AM</span> to <span id="end">12:05 AM</span>
-                </div>
+            <div><input class="card" id="student-name-input" placeholder="Student Name"></div>
+            <div><input class="card" id="destination-input" placeholder="Destination"></div>
+            <div class="card">
+                <input name="duration" id="duration-input" type="range" value="5" min="5" max="45" step="5" onchange="updateDuration()">
+                <div id="duration-display">5 minutes</div>
             </div>
+            
         </div>
 
-        <div class="card" id="teacher-signature">Teacher's Signature</div>
+        <button onclick="requestPass()" class="card" id="request-button">Request Signature</button>
 
         <div class="footer">Created by Adam Iannazzone</div>
 

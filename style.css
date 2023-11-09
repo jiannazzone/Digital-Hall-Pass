@@ -2,22 +2,41 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 body {
-    background-color: slategray;
+    background-color: navy;
     text-align: center;
     max-height: 100%;
     color: white;
     font-family: 'DM Serif Display', serif;
 }
 
-.header {
-    font-size: 1.5rem;
+.header > h1 {
+    font-size: 3rem;
+}
+.header > span {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.footer {
+    font-size: small;
+    text-align: right;
 }
 
 img#husky {
     width: 50%;
 }
 
-div.card {
+input {
+    border: 2px white solid;
+    background-color: gold;
+}
+
+button {
+    background-color: gold;
+    color: navy;
+}
+
+.card {
     padding: 1rem;
     border-radius: 10px;
     margin-bottom: 1rem;
