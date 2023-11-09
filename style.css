@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body {
+    background-color: slategray;
+    text-align: center;
+    max-height: 100%;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+.header {
+    font-size: 1.5rem;
+}
+
+img#husky {
+    width: 50%;
+}
+
+div.card {
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-size: xx-large;
+}
+
+div#student-name {
+    background-color: gold;
+    color: navy;
+}
+
+div#issue-date-time {
+    background-color: navy;
+    color: white;
+}
+
+div#teacher-signature {
+    background-color: gold;
+    color: navy;
+    font-family: 'Pacifico';
+}
