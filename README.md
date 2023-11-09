@@ -1,4 +1,4 @@
-# highland-hall-pass
+# Digital Hall Pass
 
 Tired of writing Hall Passes? This system will:
 1. Allow a student to input their Name, Destination, and requested time
