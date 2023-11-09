@@ -8,7 +8,7 @@ The system is not perfect, but I wanted something that worked without collecting
 
 ## Setup
 1. Create a custom URL with your school name by modifying the school search parameter: `https://hallpass.online/?school=<school%20name>`
-    - For example: `http://hallpass.online/?school=ridgemont%20high`
+    - For example: `https://hallpass.online/?school=ridgemont%20high`
     - Note that spaces must be replaced with `%20` to properly render
     - **This step is optional, but it will add some nice personalization to your pass!**
 2. Create a QR code that links to your custom URL. You will probably want to print this out and hang it on the wall somewhere. You can use the `URL` tab on [QRCode Monkey](https://www.qrcode-monkey.com/#url).
