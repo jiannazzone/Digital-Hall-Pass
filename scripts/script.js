@@ -3,7 +3,7 @@
 // Gets the school name
 const parameters = new URLSearchParams(document.location.search);
 const schoolName = decodeURIComponent(parameters.get('school'));
-if (schoolName != null) {
+if (schoolName != 'null') {
     document.getElementById('title').innerHTML = schoolName.toUpperCase() + ' HALL PASS';
 }
 
