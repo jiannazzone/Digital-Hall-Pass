@@ -2,24 +2,22 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Highland Hall Pass Form</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/form.css">
     </head>
     <body>
-
         <div class="header">
             <h1>HALL PASS</h1>
-            <span id="current-date">01/01/2000</span>
-            <span id="current-time">12:00:00</span>
+            <div id="current-date">01/01/2000</div>
+            <div id="current-time">12:00:00</div>
         </div>
 
         <img id="husky" src="husky.png">
 
-        <div id="details">
+        <div id="form-inputs">
 
             <div><input class="card" id="student-name-input" placeholder="Student Name"></div>
             <div><input class="card" id="destination-input" placeholder="Destination"></div>
@@ -30,10 +28,13 @@
             
         </div>
 
+        <video id="qr-scanner"></video>
+
         <button onclick="requestPass()" class="card" id="request-button">Request Signature</button>
 
         <div class="footer">Created by Adam Iannazzone</div>
 
-        <script src="script.js" async defer></script>
+        <script src="scripts/qr-scanner.umd.min.js"></script>
+        <script src="scripts/script.js" async defer></script>
     </body>
 </html>

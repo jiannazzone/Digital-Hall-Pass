@@ -34,11 +34,28 @@ function requestPass() {
         return;
     }
 
-    // Generate URL parameter string
-    let urlParameters = 'name=' + studentName + '&destination=' + studentDestination + '&duration=' + studentDuration;
-    const safeDate = encodeURIComponent(new Date());
-    urlParameters += '&date=' + safeDate;
-    window.location.href = 'pass.html?' + urlParameters;
+    // Scan the QR code
+    document.getElementById('form-inputs').style.display = 'none';
+    document.getElementById('qr-scanner').style.display = 'block';
+    const videoElem = document.getElementById('qr-scanner');
+
+    const qrScanner = new QrScanner(
+        videoElem,
+        result => {
+            // Generate URL parameter string
+            let urlParameters = 
+                'name=' + studentName + 
+                '&destination=' + studentDestination + 
+                '&duration=' + studentDuration +
+                '&teacherName=' + result.data;
+            const safeDate = encodeURIComponent(new Date());
+            urlParameters += '&date=' + safeDate;
+            qrScanner.stop();
+            window.location.href = 'pass.html?' + urlParameters;
+        },
+        {returnDetailedScanResult: true}, 
+    );
+    qrScanner.start();
 }
 
 // END FORM.HTML METHODS
@@ -51,6 +68,7 @@ function getURLData() {
     const studentDestination = parameters.get('destination');
     const duration = parameters.get('duration');
     const passDate = new Date(decodeURIComponent(parameters.get('date')));
+    const teacherName = decodeURIComponent(parameters.get('teacherName'));
 
     const studentDate = passDate.toLocaleDateString();
     const studentStart = new Date(passDate.getTime() + 60000);
@@ -62,14 +80,10 @@ function getURLData() {
     document.getElementById('date').innerHTML = studentDate;
     document.getElementById('start').innerHTML = studentStart.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
     document.getElementById('end').innerHTML = studentEnd.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
-    
+    document.getElementById('teacher-signature').innerHTML = teacherName;
+
     updateBackgroundColor();
     setInterval(updateBackgroundColor, 6000);
-}
-
-function updateBackgroundColor() {
-    
-    
 }
 
 function updateBackgroundColor() {

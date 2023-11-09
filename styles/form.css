@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display');
+
+input {
+    border: 2px white solid;
+    background-color: gold;
+}
+
+button {
+    background-color: gold;
+    color: navy;
+}
+
+video {
+    width: 100%;
+    display: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
