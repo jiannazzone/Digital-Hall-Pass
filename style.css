@@ -12,6 +12,7 @@ body {
 .header > h1 {
     font-size: 3rem;
 }
+
 .header > span {
     font-size: 2rem;
     padding: 1rem;
@@ -26,35 +27,9 @@ img#husky {
     width: 50%;
 }
 
-input {
-    border: 2px white solid;
-    background-color: gold;
-}
-
-button {
-    background-color: gold;
-    color: navy;
-}
-
 .card {
     padding: 1rem;
     border-radius: 10px;
     margin-bottom: 1rem;
     font-size: xx-large;
-}
-
-div#student-name {
-    background-color: gold;
-    color: navy;
-}
-
-div#issue-date-time {
-    background-color: navy;
-    color: white;
-}
-
-div#teacher-signature {
-    background-color: gold;
-    color: navy;
-    font-family: 'Pacifico';
 }

@@ -1,0 +1,17 @@
+body {
+    background-color: darkgreen;
+}
+
+.color1 {
+    color: white;
+    border: 2px white solid;
+}
+
+.color2 {
+    background-color: white;
+    color: darkgreen;
+}
+
+div#teacher-signature {
+    font-family: 'Pacifico';
+}

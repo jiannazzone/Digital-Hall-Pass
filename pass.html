@@ -7,11 +7,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="pass.css">
+
     </head>
     <body onload="getURLData()">
 
         <div class="header">
-            <h1>HIGHLAND HALL PASS</h1>
+            <h1>HALL PASS</h1>
             <span id="current-date">01/01/2000</span>
             <span id="current-time">12:00:00</span>
         </div>
@@ -19,10 +21,10 @@
         <img id="husky" src="husky.png">
 
         <div id="details">
-            <div class="card" id="student-name">Student Name</div>
+            <div class="card color2" id="student-name">Student Name</div>
 
-            <div class="card" id="issue-date-time">
-                VALID FOR
+            <div class="card color1" id="issue-date-time">
+                <div id="destination">Destination</div>
                 <div id="date">January 01, 2000</div>
                 <div id="time">
                     <span id="start">12:00 AM</span> to <span id="end">12:05 AM</span>
@@ -30,7 +32,7 @@
             </div>
         </div>
 
-        <div class="card" id="teacher-signature">Teacher's Signature</div>
+        <div class="card color2" id="teacher-signature">Teacher's Signature</div>
 
         <div class="footer">Created by Adam Iannazzone</div>
 

@@ -1,0 +1,9 @@
+input {
+    border: 2px white solid;
+    background-color: gold;
+}
+
+button {
+    background-color: gold;
+    color: navy;
+}
