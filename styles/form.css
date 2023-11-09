@@ -10,6 +10,11 @@ button {
     color: navy;
 }
 
+input, button {
+    font-family: 'DM Serif Display';
+    font-size: 0.5rem;
+}
+
 video {
     width: 100%;
     display: none;
