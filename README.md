@@ -1,4 +1,4 @@
-# Digital Hall Pass
+# [Hall Pass Online](https://hallpass.online/)
 
 Tired of writing Hall Passes? This system will:
 1. Allow a student to input their Name, Destination, and requested time
