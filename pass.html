@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Highland Hall Pass</title>
+        <title>Hall Pass</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="styles/style.css">
@@ -12,13 +12,12 @@
     </head>
     <body onload="getURLData()">
 
-        <div class="header">
-            <h1>HALL PASS</h1>
+        <h1 id="title">HALL PASS</h1>
+
+        <div class="header" id="header">
             <div id="current-date">01/01/2000</div>
             <div id="current-time">12:00:00</div>
         </div>
-
-        <img id="husky" src="husky.png">
 
         <div id="details">
             <div class="card color2" id="student-name">Student Name</div>
@@ -32,7 +31,10 @@
             </div>
         </div>
 
-        <div class="card color2" id="teacher-signature">Teacher's Signature</div>
+        <div id="signature" class="card">
+            <div id="signed-by">Signed By:</div>
+            <div class="card color2" id="teacher-signature">Teacher's Signature</div>
+        </div>
 
         <div class="footer">Created by Adam Iannazzone</div>
 

@@ -15,3 +15,7 @@ body {
 div#teacher-signature {
     font-family: 'Pacifico';
 }
+
+div#signed-by {
+    padding-bottom: 0.5rem;
+}

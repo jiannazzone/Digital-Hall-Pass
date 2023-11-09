@@ -18,6 +18,10 @@ body {
     font-size: 2rem;
 }
 
+.header {
+    padding-bottom: 2rem;
+}
+
 .footer {
     font-size: small;
     text-align: right;

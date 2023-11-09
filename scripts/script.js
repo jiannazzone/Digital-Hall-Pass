@@ -1,5 +1,12 @@
 // UNIVERSAL METHODS
 
+// Gets the school name
+const parameters = new URLSearchParams(document.location.search);
+const schoolName = decodeURIComponent(parameters.get('school'));
+if (schoolName != null) {
+    document.getElementById('title').innerHTML = schoolName.toUpperCase() + ' HALL PASS';
+}
+
 // Displays the current date and time
 const currentTimeElement = document.getElementById('current-time');
 const currentDateElement = document.getElementById('current-date');
@@ -35,7 +42,7 @@ function requestPass() {
     }
 
     // Scan the QR code
-    document.getElementById('form-inputs').style.display = 'none';
+    document.getElementById('header').style.display = 'none';
     document.getElementById('qr-scanner').style.display = 'block';
     const videoElem = document.getElementById('qr-scanner');
 
@@ -47,6 +54,7 @@ function requestPass() {
                 'name=' + studentName + 
                 '&destination=' + studentDestination + 
                 '&duration=' + studentDuration +
+                '&school=' + schoolName +
                 '&teacherName=' + result.data;
             const safeDate = encodeURIComponent(new Date());
             urlParameters += '&date=' + safeDate;

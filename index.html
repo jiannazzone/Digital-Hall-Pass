@@ -2,20 +2,22 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Highland Hall Pass Form</title>
+        <title>Hall Pass Form</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/form.css">
     </head>
     <body>
-        <div class="header">
-            <h1>HALL PASS</h1>
+        
+        <h1 id="title">HALL PASS</h1>
+
+        <div class="header" id="header">
             <div id="current-date">01/01/2000</div>
             <div id="current-time">12:00:00</div>
         </div>
 
-        <img id="husky" src="husky.png">
+        <video id="qr-scanner"></video>
 
         <div id="form-inputs">
 
@@ -27,8 +29,6 @@
             </div>
             
         </div>
-
-        <video id="qr-scanner"></video>
 
         <button onclick="requestPass()" class="card" id="request-button">Request Signature</button>
 
