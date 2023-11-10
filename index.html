@@ -23,15 +23,12 @@
 
             <div><input class="card" id="student-name-input" placeholder="Student Name"></div>
             <div><input class="card" id="destination-input" placeholder="Destination"></div>
-            <div class="card">
-                <div id="duration-display">
-                    <span id="duration-value">5</span>
-                    <span>minutes</span>
-                </div>
+            <div class="card" id="duration-display">
                 <button class="duration-button card" id="duration-down" onclick="updateDuration('decrease')">- 5</button>
+                <span id="duration-value">5</span>
+                <span>minutes</span>
                 <button class="duration-button card" id="duration-up" onclick="updateDuration('increase')">+ 5</button>
             </div>
-            
         </div>
 
         <button onclick="requestPass()" class="card" id="request-button">Request Signature</button>
