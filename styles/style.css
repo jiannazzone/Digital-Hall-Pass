@@ -37,6 +37,7 @@ body, a {
 }
 
 .footer {
+    display: grid;
     font-size: small;
     text-align: right;
 }
