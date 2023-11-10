@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 body {
     background-color: navy;
     text-align: center;
-    max-height: 100%;
-    color: white;
     font-family: 'DM Serif Display', serif;
     margin: 1rem;
+}
+
+body, a {
+    color: white;
 }
 
 .header > h1 {
@@ -27,13 +41,9 @@ body {
     text-align: right;
 }
 
-img#husky {
-    width: 50%;
-}
-
 .card {
     padding: 1rem;
     border-radius: 10px;
-    margin-bottom: 1rem;
+    margin: 0.5rem;
     font-size: 1.5rem;
 }

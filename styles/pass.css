@@ -1,3 +1,13 @@
+#details {
+    display: grid;
+}
+
+#signature {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1fr;
+}
+
 body {
     background-color: darkgreen;
 }
@@ -14,8 +24,4 @@ body {
 
 div#teacher-signature {
     font-family: 'Pacifico';
-}
-
-div#signed-by {
-    padding-bottom: 0.5rem;
 }

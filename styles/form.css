@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display');
 
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+#duration-display {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+}
+
 input {
     border: 2px white solid;
     background-color: gold;
 }
 
 button {
-    background-color: gold;
+    background-color: white;
     color: navy;
+    border: 2px gold solid;
 }
 
 input, button {
@@ -21,7 +34,8 @@ input, button {
 }
 
 video {
-    width: 100%;
+    justify-self: center;
+    max-width: 100%;
     display: none;
     padding: 0.5rem;
     border-radius: 1rem;

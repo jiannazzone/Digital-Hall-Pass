@@ -32,13 +32,17 @@ function updateDuration(action) {
     } else if (action == "decrease" && duration > 5) {
         duration -= increment;
     }
-    document.getElementById('duration-value').innerHTML = duration;
+    console.log(duration)
+    const durationText = document.getElementById('duration-value');
+    durationText.setAttribute('data-value', duration);
+    durationText.innerHTML = duration + ' minutes'
+
 }
 
 function requestPass() {
     const studentName = document.getElementById('student-name-input').value;
     const studentDestination = document.getElementById('destination-input').value;
-    const studentDuration = document.getElementById('duration-value').innerHTML;
+    const studentDuration = document.getElementById('duration-value').getAttribute('data-value');
 
 
     // Check for invalid inputs
