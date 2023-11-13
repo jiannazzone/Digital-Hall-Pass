@@ -61,13 +61,12 @@ function requestPass() {
         result => {
             // Generate URL parameter string
             let urlParameters = 
-                'name=' + studentName + 
-                '&destination=' + studentDestination + 
-                '&duration=' + studentDuration +
-                '&school=' + schoolName +
-                '&teacherName=' + result.data;
-            const safeDate = encodeURIComponent(new Date());
-            urlParameters += '&date=' + safeDate;
+                'name=' + encodeURIComponent(studentName) + 
+                '&destination=' + encodeURIComponent(studentDestination) + 
+                '&duration=' + encodeURIComponent(studentDuration) +
+                '&school=' + encodeURIComponent(schoolName) +
+                '&teacherName=' + result.data +
+                '&date=' + encodeURIComponent(new Date());
             qrScanner.stop();
             window.location.href = 'pass.html?' + urlParameters;
         },
