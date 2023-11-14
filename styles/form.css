@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
+    justify-content: center;
 }
 
 input {
@@ -28,11 +29,6 @@ input, button {
     color: navy;
 }
 
-.duration-button {
-    font-size: 1rem;
-    font-weight: bolder;
-}
-
 video {
     justify-self: center;
     max-width: 100%;
@@ -41,6 +37,7 @@ video {
     border-radius: 1rem;
 }
 
-.atlus-icon {
+.duration-button {
     color: white;
+    text-align: center;
 }

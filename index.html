@@ -31,14 +31,15 @@
                 <input class="card" id="destination-input" placeholder="Destination">
 
                 <div class="card" id="duration-display">
-                    <!-- <button class="duration-button card" id="duration-down" onclick="updateDuration('decrease')">- 5</button>  -->
-                    <i class="at-minus-circle atlus-icon" onclick="updateDuration('decrease')"></i>
+                    <div>
+                        <img type="button" class="duration-button" src="assets/minus-circle.svg" onclick="updateDuration('decrease')">
+                    </div>
                     <div id="duration-value" data-value="5">
                         5 minutes
                     </div>
-                    <!-- <button class="duration-button card" id="duration-up" onclick="updateDuration('increase')"> -->
-                        <i class="at-plus-circle atlus-icon" onclick="updateDuration('increase')"></i>
-                    <!-- </button> -->
+                    <div>
+                        <img type="button" class="duration-button" src="assets/plus-circle.svg" onclick="updateDuration('increase')">
+                    </div>
                 </div>
             </div>
             
