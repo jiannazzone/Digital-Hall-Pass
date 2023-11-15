@@ -3,7 +3,6 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     align-items: center;
     height: 90vh;

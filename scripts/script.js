@@ -53,7 +53,8 @@ function requestPass() {
 
     // Scan the QR code
     document.getElementById('header').style.display = 'none';
-    document.getElementById('qr-scanner').style.display = 'block';
+    document.getElementById('scanner-container').style.display = 'block';
+    document.getElementById('request-container').style.display = 'none';
     const videoElem = document.getElementById('qr-scanner');
 
     const qrScanner = new QrScanner(
