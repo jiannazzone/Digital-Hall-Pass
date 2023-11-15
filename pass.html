@@ -10,40 +10,43 @@
         <link rel="icon" type="image/x-icon" href="assets/pass.png">
     </head>
     <body onload="getURLData()">
+        <div class="grid-container">
+            <!-- Header Section -->
+            <div class="header-container">
+                <h1 id="title">HALL PASS</h1>
 
-        <!-- Header Section -->
-        <div class="header-container">
-            <h1 id="title">HALL PASS</h1>
-
-            <div class="header" id="header">
-                <div id="current-date">01/01/2000</div>
-                <div id="current-time">12:00:00</div>
-            </div>
-        </div>
-
-        <div id="details">
-            <div class="card color2" id="student-name">Student Name</div>
-
-            <div class="card color1" id="issue-date-time">
-                <div id="destination">Destination</div>
-                <div id="date">January 01, 2000</div>
-                <div id="time">
-                    <span id="start">12:00 AM</span> to <span id="end">12:05 AM</span>
+                <div class="header" id="header">
+                    <div id="current-date">01/01/2000</div>
+                    <div id="current-time">12:00:00</div>
                 </div>
             </div>
+
+            <div id="pass-container">
+                <div id="details">
+                    <div class="card color2" id="student-name">Student Name</div>
+
+                    <div class="card color1" id="issue-date-time">
+                        <div id="destination">Destination</div>
+                        <div id="date">January 01, 2000</div>
+                        <div id="time">
+                            <span id="start">12:00 AM</span> to <span id="end">12:05 AM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="signature" class="card">
+                    <div id="signed-by">Signed By:</div>
+                    <div class="card color2" id="teacher-signature">Teacher's Signature</div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div>Created by Adam Iannazzone</div>
+                <a href="https://github.com/jiannazzone/Digital-Hall-Pass" target="_blank" rel="noopener noreferrer">Learn More</a>
+                <a href="https://www.flaticon.com/free-icons/identity" title="identity icons">Favicon by Pixel Perfect</a>
+            </div>
         </div>
 
-        <div id="signature" class="card">
-            <div id="signed-by">Signed By:</div>
-            <div class="card color2" id="teacher-signature">Teacher's Signature</div>
-        </div>
-
-        <div class="footer">
-            <div>Created by Adam Iannazzone</div>
-            <a href="https://github.com/jiannazzone/Digital-Hall-Pass" target="_blank" rel="noopener noreferrer">Learn More</a>
-            <a href="https://www.flaticon.com/free-icons/identity" title="identity icons">Favicon by Pixel Perfect</a>
-        </div>
-
-        <script src="scripts/script.js" async defer></script>
+            <script src="scripts/script.js" async defer></script>
     </body>
 </html>

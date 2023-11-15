@@ -3,6 +3,8 @@
 .form-container {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    justify-content: center;
     align-items: center;
 }
 
@@ -33,7 +35,7 @@ video {
     justify-self: center;
     max-width: 100%;
     display: none;
-    padding: 0.5rem;
+    padding: 0.25rem;
     border-radius: 1rem;
 }
 

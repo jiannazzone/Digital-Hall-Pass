@@ -4,13 +4,15 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
     align-items: center;
-    justify-content: center;
+    height: 90vh;
 }
 
 .header-container {
     display: grid;
-    grid-template-columns: 1fr;
+    align-items: start;
+    justify-content: center;
 }
 
 body {
@@ -24,16 +26,8 @@ body, a {
     color: white;
 }
 
-.header > h1 {
-    font-size: 3rem;
-}
-
-.header > div {
-    font-size: 2rem;
-}
-
 .header {
-    padding-bottom: 2rem;
+    font-size: 2rem;
 }
 
 .footer {

@@ -15,7 +15,6 @@
             <!-- Header Section -->
             <div class="header-container">
                 <h1 id="title">HALL PASS</h1>
-
                 <div class="header" id="header">
                     <div id="current-date">01/01/2000</div>
                     <div id="current-time">12:00:00</div>
@@ -27,8 +26,10 @@
             <!-- Form Section -->
             <div id="form-inputs" class="form-container">
 
-                <input class="card" id="student-name-input" placeholder="Student Name">
-                <input class="card" id="destination-input" placeholder="Destination">
+                <div id="input-container">
+                    <input class="card" id="student-name-input" placeholder="Student Name">
+                    <input class="card" id="destination-input" placeholder="Destination">
+                </div>
 
                 <div class="card" id="duration-display">
                     <div>
@@ -41,10 +42,13 @@
                         <img type="button" class="duration-button" src="assets/plus-circle.svg" onclick="updateDuration('increase')">
                     </div>
                 </div>
+
+                <div id="request-container">
+                    <button onclick="requestPass()" class="card" id="request-button">Request Signature</button>
+                </div>
+                
             </div>
-            
-            <button onclick="requestPass()" class="card" id="request-button">Request Signature</button>
-            
+
             <div class="footer">
                 <a href="https://github.com/jiannazzone/Digital-Hall-Pass" target="_blank" rel="noopener noreferrer">Created by Adam Iannazzone</a>
                 <a href="https://www.flaticon.com/free-icons/identity" title="identity icons">Favicon by Pixel Perfect</a>
