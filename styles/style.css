@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
+html, body {
+    height: 90vh;
+}
+
+
 .grid-container {
     display: grid;
     grid-template-rows: auto auto auto;
     align-items: center;
-    height: 90vh;
+    align-content: stretch;
+    height: 100%;
 }
 
 .header-container {
