@@ -12,6 +12,7 @@ html, body {
     align-items: center;
     align-content: stretch;
     height: 100%;
+    justify-content: stretch;
 }
 
 .header-container {
