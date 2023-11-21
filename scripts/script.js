@@ -13,13 +13,15 @@ const currentDateElement = document.getElementById('current-date');
 let studentEnd;
 let currentColor = 'darkgreen';
 
-setInterval(function () {
-    const currentDate = new Date();
-    const dateText = currentDate.toLocaleDateString();
-    const timeText = currentDate.toLocaleTimeString();
-    currentDateElement.innerText = dateText;
-    currentTimeElement.innerText = timeText;
-}, 1000);
+if (currentTimeElement != null) {
+    setInterval(function () {
+        const currentDate = new Date();
+        const dateText = currentDate.toLocaleDateString();
+        const timeText = currentDate.toLocaleTimeString();
+        currentDateElement.innerText = dateText;
+        currentTimeElement.innerText = timeText;
+    }, 1000);
+}
 
 // END UNIVERSAL METHODS
 
@@ -125,3 +127,18 @@ function updateBackgroundColor() {
 }
 
 // END PASS.HTML METHODS
+
+function generateURL() {
+
+    const schoolNameInputElem = document.getElementById('school-name-input');
+    const schoolName = schoolNameInputElem.value;
+    const customURL = 'https://hallpass.online?school=' + encodeURIComponent(schoolName);
+    navigator.clipboard.writeText(customURL);
+
+    schoolNameInputElem.value = '';
+    schoolNameInputElem.placeholder = 'URL Copied to Clipboard';
+
+    setTimeout(() => {
+        schoolNameInputElem.placeholder = 'School Name';
+    }, 2000);
+}
