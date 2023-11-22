@@ -83,7 +83,7 @@ function requestPass() {
 // PASS.HTML METHODS
 // Gets URL search parameters for pass.html
 function getURLData() {
-    const parameters = new URLSearchParams(document.location.search);
+    // const parameters = new URLSearchParams(document.location.search);
     const studentName = parameters.get('name');
     const studentDestination = parameters.get('destination');
     const duration = parameters.get('duration');
@@ -109,12 +109,13 @@ function getURLData() {
 function updateBackgroundColor() {
     const date = new Date();
     const timeRemaining = studentEnd - date;
+    const duration = parameters.get('duration');
 
     // Update currentColor variable
     if (timeRemaining < 0) {
         currentColor = '#c80815'; // red
-    } else if (timeRemaining <= 120000) {
-        currentColor = '#ffc40c'; // yellow
+    } else if (timeRemaining <= (duration*60000) / 2) {
+        currentColor = '#edb500'; // yellow
     } else {
         currentColor = 'darkgreen';
     }
