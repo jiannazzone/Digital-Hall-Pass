@@ -1,5 +1,7 @@
 # [Hall Pass Online](https://hallpass.online/)
 
+![Screenshots of Hall Pass Online](assets/bento.jpeg)
+
 Tired of writing Hall Passes? This system will allow:
 1. A student to input their Name, Destination, and requested time
 2. You as the teacher to authenticate and "sign" the pass using a QR code
