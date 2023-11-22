@@ -24,4 +24,5 @@ The system is not perfect, but I wanted something that worked without collecting
 All data is passed between pages using URL Search Parameters, so nothing is tracked or stored.
 
 ## Acknowledgements
-The QR Scanner is courtesy of [qr-scanner by nimiq](https://github.com/nimiq/qr-scanner)
+- The QR Scanner is courtesy of [qr-scanner by nimiq](https://github.com/nimiq/qr-scanner)
+- Screenshots created using the free app [Bento Craft](https://github.com/thatvirtualboy/SwiftUI-Bento-Box)
