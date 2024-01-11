@@ -26,3 +26,5 @@ All data is passed between pages using URL Search Parameters, so nothing is trac
 ## Acknowledgements
 - The QR Scanner is courtesy of [qr-scanner by nimiq](https://github.com/nimiq/qr-scanner)
 - Screenshots created using the free app [Bento Craft](https://github.com/thatvirtualboy/SwiftUI-Bento-Box)
+
+## Please consider supporting me with [a donation](https://www.buymeacoffee.com/aiannazzone).
